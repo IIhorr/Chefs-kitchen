@@ -1,0 +1,28 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__link {
+    padding: 0.65rem 0.95rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--dark-beige);
+    font-family: var(--font-neue);
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+
+    &.active {
+      background-color: var(--dark-taupe);
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: var(--dark-taupe);
+    }
+  }
+}

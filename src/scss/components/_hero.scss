@@ -1,0 +1,77 @@
+.hero {
+  background-color: #232222;
+  padding: 20rem 7rem 10rem;
+
+  &__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+
+  &-info {
+    grid-column: 1 / 6;
+
+    &__wrapper {
+      display: flex;
+      align-items: start;
+    }
+
+    &__special {
+      border-top: 1px solid var(--dark-beige);
+      border-bottom: 1px solid var(--dark-beige);
+      padding: 8.5px 0;
+      margin-right: 1rem;
+    }
+
+    &__hot-proposition {
+      font-size: 1.45rem;
+      line-height: 1.03;
+      color: var(--dark-taupe);
+      font-family: var(--font-neue);
+      text-align: right;
+      margin-bottom: 0.6rem;
+    }
+
+    &__image {
+      object-fit: contain;
+    }
+
+    &__price {
+      color: var(--dark-beige);
+      font-size: 6.95rem;
+      font-family: var(--font-bung-sh);
+      line-height: 1;
+      display: flex;
+      align-items: start;
+    }
+
+    &__value {
+      margin-right: 4.5px;
+      margin-top: 8px;
+      font-family: var(--font-neue);
+      font-size: 3.15rem;
+    }
+  }
+
+  &__title {
+    font-size: 4.65rem;
+    line-height: 0.88;
+    color: var(--dark-beig);
+    font-family: var(--font-bung-in);
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+
+    span {
+      word-spacing: 20px;
+      letter-spacing: 2px;
+      font-size: 4rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: -11rem;
+    top: -13rem;
+  }
+}

@@ -1,0 +1,74 @@
+@font-face {
+  font-family: var(--font-mon);
+  src: url('@src/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('@src/fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-neue);
+  src: url('@src/fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('@src/fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-bung-in);
+  src: url('@src/fonts/BungeeInline-Regular.woff2') format('woff2'),
+    url('@src/fonts/BungeeInline-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-bung-sh);
+  src: url('@src/fonts/BungeeShade-Regular.woff2') format('woff2'),
+    url('@src/fonts/BungeeShade-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin Text-Style {
+  font-family: var(--font-bung-in);
+  font-size: 2.5rem;
+  line-height: 0.75;
+}
+
+@mixin Text-Style-4 {
+  font-family: var(--font-neue);
+  font-size: 1.88rem;
+
+  font-weight: 700;
+  line-height: 1;
+}
+
+@mixin Text-Style-3 {
+  font-family: var(--font-bung-sh);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@mixin Text-Style-main {
+  font-family: var(--font-mon);
+  font-size: 0.83rem;
+  line-height: 1.75;
+}
+
+.section-title {
+  @include Text-Style;
+}
+
+.section-descr {
+  @include Text-Style-3;
+}
+
+.section-short--descr {
+  @include Text-Style-main;
+}
