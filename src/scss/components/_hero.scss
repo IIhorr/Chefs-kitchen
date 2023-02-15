@@ -70,8 +70,10 @@
   }
 
   &__image {
-    position: absolute;
-    right: -11rem;
-    top: -13rem;
+    grid-column: 7 span;
+
+    img {
+      margin-left: auto;
+    }
   }
 }

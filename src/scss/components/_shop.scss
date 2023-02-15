@@ -1,0 +1,82 @@
+.shop {
+  margin-top: 4.7rem;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    background: radial-gradient(circle, rgba(47, 39, 31, 1) 0%, rgba(34, 28, 23, 1) 100%);
+    z-index: -1;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.container {
+    padding: 0 3.5rem;
+  }
+
+  & > .section-title {
+    margin-bottom: 1.5rem;
+  }
+
+  &-burger {
+    margin-bottom: 3.7rem;
+  }
+}
+
+.burger {
+  margin-top: 3.3rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+
+  &__item {
+    grid-column: 4 span;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name {
+    @include Text-Style-4;
+    margin-bottom: 0.7rem;
+    letter-spacing: 1px;
+  }
+
+  &__descr {
+    display: block;
+    color: var(--dark-beige);
+    padding: 0 1rem;
+    font-size: 0.83rem;
+    line-height: 1.25;
+    font-family: var(--font-mon);
+    margin-bottom: 1.3rem;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 14.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    img {
+      object-fit: none;
+      border-radius: 15%;
+    }
+  }
+
+  &__item:nth-child(even) &__image {
+    img {
+      transform: rotate(90deg);
+    }
+  }
+
+  & > .btn--red {
+    width: max-content;
+  }
+}

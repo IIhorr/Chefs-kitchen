@@ -75,7 +75,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[name][hash][ext][query]',
-    clean: true,
+    clean: process.env.NODE_ENV === 'production',
   },
 
   module: {

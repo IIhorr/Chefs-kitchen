@@ -5,10 +5,10 @@
   "description": "A collection of different Webpack setups for quick referencing or starting from",
   "scripts": {
     "start": "cross-env SERVE=true webpack serve",
+    "start-s": "cross-env SERVE=true webpack serve --open",
     "watch": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
-    "build-dev": "webpack",
-    "clean": "rm -rf ./dist"
+    "build-dev": "webpack"
   },
   "author": "Jimmy DC",
   "license": "ISC",

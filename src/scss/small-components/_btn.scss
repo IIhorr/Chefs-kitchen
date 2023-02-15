@@ -1,0 +1,17 @@
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  &--red {
+    background-color: var(--brick);
+    color: var(--white);
+    font-family: var(--font-bung-in);
+    font-size: 8.3px;
+    padding: 11.5px 23.5px 10px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+}
